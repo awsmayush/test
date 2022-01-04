@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:src="@color/design_default_color_error"
+       android:alpha="0.5"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/searchCityEditText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter City"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:id="@+id/search_button"
+        android:text="Search"
+        android:onClick="searchCity"
+        android:textColor="@color/cardview_shadow_start_color"
+        android:alpha="0.5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Property"
+        android:id="@+id/findProperty"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post A property"
+        android:id="@+id/postProperty"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="225dp"/>
+
+</RelativeLayout>
